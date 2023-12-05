@@ -12,7 +12,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backcolor, //backcolor comes costants dart file
+      backgroundColor: backcolor, //backcolor comes constants dart file........................
 
       body: Padding(
         padding: const EdgeInsets.all(23).r,
@@ -22,7 +22,7 @@ class LoginScreen extends StatelessWidget {
               const backbutton(),
               Align(
                 alignment: Alignment.centerRight,
-                  child: Image.asset("assets/icons/date.png")),//custom back button
+                  child: Image.asset("assets/icons/date.png")),//custom back button................
               SizedBox(
             height: 49.h,
               ),
@@ -37,15 +37,16 @@ class LoginScreen extends StatelessWidget {
               SizedBox(
               height: 50.h,
               child: TextFormField(
-                  // controller: ,text editing controller
+                  // controller: ,text editing controller...............................
                   decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.grey),
+                          borderSide: const BorderSide(color: dark),
                           borderRadius: BorderRadius.circular(8).r),
                       focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.grey),
+                          borderSide: const BorderSide(color: dark),
                           borderRadius: BorderRadius.circular(8).r),
                       hintText: "Enter your ID",
+                      hintStyle: TextStyle(fontSize: 18.sp),
                       contentPadding: EdgeInsets.symmetric(
                           vertical: 5.h, horizontal: 15.w),
                       filled: true,
@@ -56,16 +57,17 @@ class LoginScreen extends StatelessWidget {
               SizedBox(
               height: 50.h,
               child: TextFormField(
-                  // controller: ,text editing controller
+                  // controller: ,text editing controller.....................................
                   decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.grey),
+                          borderSide: const BorderSide(color: dark),
                           borderRadius: BorderRadius.circular(8).r),
                       focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.grey),
+                          borderSide: const BorderSide(color:dark),
                           borderRadius: BorderRadius.circular(8).r),
                       suffixIcon: Image.asset("assets/icons/eye.png"),
                       hintText: "Enter your password",
+                      hintStyle: TextStyle(fontSize: 18.sp),
                       contentPadding: EdgeInsets.symmetric(
                           vertical: 5.h, horizontal: 15.w),
                       filled: true,
@@ -78,7 +80,12 @@ class LoginScreen extends StatelessWidget {
               btntheam: btncolor,
               textcolor: Colors.white,
               outlinecolor: btncolor,
-              click: () {}),
+              click: ()
+              {
+
+                // Login function..................................
+
+              }),
             ]),
           ),
         ),
