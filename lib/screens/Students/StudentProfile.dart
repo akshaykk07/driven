@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../widgets/ProfileBox.dart';
+import '../../widgets/ProfileBox.dart';
 
 class StudentProfile extends StatelessWidget {
   const StudentProfile({super.key});
@@ -165,7 +165,7 @@ class StudentProfile extends StatelessWidget {
                               title: "My Documents",
                               subtitle:
                                   "Some short description of this type of report.",
-                              image: "assets/icons/edit.png")
+                              image: "assets/icons/checkk.png")
                         ],
                       ),
                       Column(
@@ -174,7 +174,7 @@ class StudentProfile extends StatelessWidget {
                             title: "My Tutor",
                             subtitle:
                                 "Some short description of this type of report.",
-                            image: "assets/icons/men.png",
+                            image: "assets/icons/cal.png",
                             bookmark: true,
                           ),
                           ProfileBox(

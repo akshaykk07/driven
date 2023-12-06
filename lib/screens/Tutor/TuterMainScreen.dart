@@ -6,8 +6,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../widgets/Mainscreencard.dart';
 import '../../widgets/apptext.dart';
 
-class MainScreen extends StatelessWidget {
-  const MainScreen({super.key});
+class TutermainScreen extends StatelessWidget {
+  const TutermainScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

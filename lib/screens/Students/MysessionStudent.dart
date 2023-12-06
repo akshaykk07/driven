@@ -31,7 +31,7 @@ class _MysessionScreenState extends State<MysessionScreen> {
             padding: const EdgeInsets.only(left: 22).r,
             child: backbutton(),
           ),
-          title: Apptext(
+          title: Apptext3(
               text: "My Sessions",
               textcolor: btncolor,
               size: 18.sp,
@@ -122,8 +122,8 @@ class _MysessionScreenState extends State<MysessionScreen> {
         return Dialog(
           shape: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
           child: Container(
-            height: 213,
-            width: 300,
+            height: 213.h,
+            width: 300.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15), color: btncolor),
             child: Padding(

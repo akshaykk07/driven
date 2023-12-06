@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
-import '../widgets/Mainscreencard.dart';
-import '../widgets/apptext.dart';
+import '../../widgets/Mainscreencard.dart';
+import '../../widgets/apptext.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});

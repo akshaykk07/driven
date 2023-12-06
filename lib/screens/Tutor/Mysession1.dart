@@ -6,6 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'MysessionFinshed.dart';
+import 'Mysessionall.dart';
+import 'Mysessionpending.dart';
+
 class MysessionScreen extends StatefulWidget {
   const MysessionScreen({super.key});
 
@@ -98,7 +102,12 @@ class _MysessionScreenState extends State<MysessionScreen> {
                 ),
               ),
             ),
-            // Expanded(child: TabBarView(children: []))
+            const Expanded(
+                child: TabBarView(children: [
+              MysessionallScreen(),
+              MysessionfinishScreen(),
+              MysessionPendingScreen()
+            ]))
           ]),
         ),
         floatingActionButton: FloatingActionButton(
@@ -129,13 +138,19 @@ class _MysessionScreenState extends State<MysessionScreen> {
             child: Padding(
               padding: const EdgeInsets.all(20).r,
               child: Column(children: [
-               Text("APPLY FOR SESSION",style: GoogleFonts.roboto(fontSize: 13,fontWeight: FontWeight.w700,color: backcolor),),
+                Text(
+                  "APPLY FOR SESSION",
+                  style: GoogleFonts.roboto(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700,
+                      color: backcolor),
+                ),
                 Padding(
                   padding: const EdgeInsets.only(top: 20).r,
                   child: SizedBox(
                       height: 36.h,
                       child: TextFormField(
-                        // controller: ,text editing controller
+                          // controller: ,text editing controller
                           decoration: InputDecoration(
                               enabledBorder: OutlineInputBorder(
                                   borderSide: const BorderSide(color: dark),
@@ -145,8 +160,8 @@ class _MysessionScreenState extends State<MysessionScreen> {
                                   borderRadius: BorderRadius.circular(8).r),
                               hintText: "Vehicle Type",
                               hintStyle: TextStyle(fontSize: 15.sp),
-                              contentPadding:
-                              EdgeInsets.symmetric(vertical: 5.h, horizontal: 15.w),
+                              contentPadding: EdgeInsets.symmetric(
+                                  vertical: 5.h, horizontal: 15.w),
                               filled: true,
                               fillColor: backcolor))),
                 ),
@@ -155,7 +170,7 @@ class _MysessionScreenState extends State<MysessionScreen> {
                   child: SizedBox(
                       height: 36.h,
                       child: TextFormField(
-                        // controller: ,text editing controller
+                          // controller: ,text editing controller
                           decoration: InputDecoration(
                               enabledBorder: OutlineInputBorder(
                                   borderSide: const BorderSide(color: dark),
@@ -165,8 +180,8 @@ class _MysessionScreenState extends State<MysessionScreen> {
                                   borderRadius: BorderRadius.circular(8).r),
                               hintText: "Select Time & Date",
                               hintStyle: TextStyle(fontSize: 15.sp),
-                              contentPadding:
-                              EdgeInsets.symmetric(vertical: 5.h, horizontal: 15.w),
+                              contentPadding: EdgeInsets.symmetric(
+                                  vertical: 5.h, horizontal: 15.w),
                               filled: true,
                               fillColor: backcolor))),
                 ),
@@ -176,13 +191,12 @@ class _MysessionScreenState extends State<MysessionScreen> {
                     btnname: "DONE",
                     btntheam: btncolor,
                     textcolor: backcolor,
-                    outlinecolor: backcolor
-                    , click: (){
-
+                    outlinecolor: backcolor,
+                    click: () {
                       //button pressed....................................
-
-                  },
-                    height: 36,),
+                    },
+                    height: 36,
+                  ),
                 )
               ]),
             ),

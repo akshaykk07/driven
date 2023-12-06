@@ -5,19 +5,21 @@ import '../constants/color.dart';
 import 'apptext.dart';
 
 class Button extends StatelessWidget {
-  const Button({
+   Button({
     super.key,
     required this.btnname,
     required this.btntheam,
     required this.textcolor,
     required this.outlinecolor,
     required this.click,
+    this.height=56,
   });
 
   final String btnname;
   final Color btntheam;
   final Color outlinecolor;
   final Color textcolor;
+  final double height;
   final void Function() click;
 
   @override
@@ -25,7 +27,7 @@ class Button extends StatelessWidget {
     return InkWell(
       onTap: click,
       child: Container(
-        height: 56.h,
+        height: height.h,
         width: double.infinity.w,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8).r,
